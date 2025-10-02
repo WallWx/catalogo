@@ -1,6 +1,6 @@
-/* =========================
+/* ==================================================
    ESTILOS GENERALES
-   ========================= */
+================================================== */
 body {
   font-family: Arial, sans-serif;
   background-color: #fff;
@@ -9,11 +9,14 @@ body {
   padding: 0;
 }
 
-a { text-decoration: none; color: inherit; }
+a { 
+  text-decoration: none; 
+  color: inherit; 
+}
 
-/* =========================
+/* ==================================================
    HEADER
-   ========================= */
+================================================== */
 header {
   background: #000;
   color: #fff;
@@ -21,9 +24,9 @@ header {
   text-align: center;
 }
 
-/* =========================
+/* ==================================================
    SECCIÓN TÍTULO
-   ========================= */
+================================================== */
 .titulo {
   display: flex;
   justify-content: flex-start;
@@ -38,20 +41,31 @@ header {
   margin: 0;
 }
 
-/* =========================
-   GRID PRODUCTOS (2x4)
-   ========================= */
+/* ==================================================
+   CONTENEDOR 1: GRID DE PRODUCTOS (2x4 con scroll)
+================================================== */
 .contenedor-grid {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 20px;
+}
+
+.productos-grid-wrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  max-width: 900px;
+  scrollbar-width: none;      /* Firefox */
+}
+.productos-grid-wrapper::-webkit-scrollbar {
+  display: none;              /* Chrome / Safari */
 }
 
 .productos-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  max-width: 900px;
+  min-width: 900px;
 }
 
 .producto {
@@ -71,9 +85,7 @@ header {
   object-fit: contain;
 }
 
-.producto:hover {
-  transform: scale(1.05);
-}
+.producto:hover { transform: scale(1.05); }
 
 .precio {
   position: absolute;
@@ -86,9 +98,9 @@ header {
   font-size: 14px;
 }
 
-/* =========================
-   BOTÓN VER TODO
-   ========================= */
+/* ==================================================
+   BOTÓN: VER TODO
+================================================== */
 .btn-ver-todo-container {
   display: flex;
   justify-content: center;
@@ -112,12 +124,11 @@ header {
   cursor: pointer;
 }
 
-/* =========================
-   CARRUSEL
-   ========================= */
+/* ==================================================
+   CONTENEDOR 2: CARRUSEL HORIZONTAL
+================================================== */
 .contenedor-dos {
   margin: 30px 0;
-  position: relative;
 }
 
 .productos-destacados {
@@ -126,11 +137,10 @@ header {
   padding: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none;
+  scrollbar-width: none;        /* Firefox */
 }
-
 .productos-destacados::-webkit-scrollbar {
-  display: none;
+  display: none;                /* Chrome / Safari */
 }
 
 .producto-destacado-wrapper {
@@ -142,8 +152,8 @@ header {
 }
 
 .producto-destacado {
-  width: 340px;
-  height: 340px;
+  width: 280px;
+  height: 506px;
   background: #f4f4f4;
   display: flex;
   justify-content: center;
@@ -158,9 +168,7 @@ header {
   object-fit: cover;
 }
 
-.producto-destacado:hover {
-  transform: scale(1.05);
-}
+.producto-destacado:hover { transform: scale(1.05); }
 
 .cantidad-elementos-cuadro {
   font-size: 14px;
@@ -168,30 +176,9 @@ header {
   color: #000;
 }
 
-/* Botones carrusel */
-.btn-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  font-size: 48px;
-  color: rgba(0, 0, 0, 0.6);
-  cursor: pointer;
-  z-index: 20;
-  transition: color 0.3s;
-}
-
-.btn-nav:hover {
-  color: rgba(0, 0, 0, 1);
-}
-
-.btn-left { left: 10px; }
-.btn-right { right: 10px; }
-
-/* =========================
-   CONTENEDOR COMUNICACIÓN
-   ========================= */
+/* ==================================================
+   CONTENEDOR 3: COMUNICACIÓN (WHATSAPP)
+================================================== */
 .contenedor-comunicacion {
   background: #000;
   color: #fff;
@@ -212,19 +199,17 @@ header {
   gap: 10px;
   background: #25d366;
   padding: 12px 20px;
-  border-radius: 8px;
+  border-radius: 6px;
   color: #fff;
   font-weight: bold;
   transition: background 0.3s;
 }
 
-.btn-whatsapp:hover {
-  background: #1ebe5d;
-}
+.btn-whatsapp:hover { background: #1ebe5d; }
 
-/* =========================
+/* ==================================================
    FOOTER
-   ========================= */
+================================================== */
 footer {
   background: #000;
   color: #fff;

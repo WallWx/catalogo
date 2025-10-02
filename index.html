@@ -9,100 +9,91 @@
 </head>
 <body>
 
-  <!-- =========================
+  <!-- ==================================================
        HEADER
-  ========================= -->
+  ================================================== -->
   <header>
     <div class="logo"></div>
     <a> Productos Adidas 100% Original </a> 
   </header>
 
-  <!-- =========================
+  <!-- ==================================================
        MAIN
-  ========================= -->
+  ================================================== -->
   <main>
 
-    <!-- =========================
+    <!-- ==================================================
          SECCIÓN TÍTULO
-    ========================= -->
+    ================================================== -->
     <section class="titulo">
       <h1>Solo Para Ti</h1>
     </section>
 
-    <!-- =========================
-         CONTENEDOR 1: GRID DE PRODUCTOS (2x4)
-    ========================= -->
+    <!-- ==================================================
+         CONTENEDOR 1: GRID DE PRODUCTOS (2x4 con scroll)
+    ================================================== -->
     <section class="contenedor-grid">
-      <div class="productos-grid">
-        
-        <!-- Producto 1 -->
-        <a href="#" class="producto" title="Producto 1">
-          <img src="assets/img/productos/1/1 logo pequeño negro.avif" alt="Producto 1">
-          <span class="precio">$79</span>
-        </a>
-
-        <!-- Producto 2 -->
-        <a href="#" class="producto" title="Producto 2">
-          <img src="assets/img/productos/2/1 logo pequeño blanco.avif" alt="Producto 2">
-          <span class="precio">$79</span>
-        </a>
-
-        <!-- Producto 3 -->
-        <a href="#" class="producto" title="Producto 3">
-          <img src="assets/img/productos/3/1 Logo pequeño plomo.avif" alt="Producto 3">
-          <span class="precio">$79</span>
-        </a>
-
-        <!-- Producto 4 -->
-        <a href="#" class="producto" title="Producto 4">
-          <img src="assets/img/productos/4/1 oversize plomo.avif" alt="Producto 4">
-          <span class="precio">$140</span>
-        </a>
-
-        <!-- Producto 5 -->
-        <a href="#" class="producto" title="Producto 5">
-          <img src="assets/img/productos/5/1 todo rosado.avif" alt="Producto 5">
-          <span class="precio">$100</span>
-        </a>
-
-        <!-- Producto 6 -->
-        <a href="#" class="producto" title="Producto 6">
-          <img src="assets/img/productos/6/1 todo verde.avif" alt="Producto 6">
-          <span class="precio">$100</span>
-        </a>
-
-        <!-- Producto 7 -->
-        <a href="#" class="producto" title="Producto 7">
-          <img src="assets/img/productos/7/1 estampado blanco.avif" alt="Producto 7">
-          <span class="precio">$100</span>
-        </a>
-
-        <!-- Producto 8 -->
-        <a href="#" class="producto" title="Producto 8">
-          <img src="assets/img/productos/8/1 tres tiras beige.avif" alt="Producto 8">
-          <span class="precio">$90</span>
-        </a>
-
+      <div id="grid-scroll" class="productos-grid-wrapper">
+        <div class="productos-grid">
+          <!-- Producto 1 -->
+          <a href="#" class="producto" title="Essentials Small Logo Single Jersey Tee">
+            <img src="assets/img/productos/1/1 logo pequeño negro.avif" alt="Producto 1">
+            <span class="precio">$79</span>
+          </a>
+          <!-- Producto 2 -->
+          <a href="#" class="producto" title="Essentials Small Logo Single Jersey Tee">
+            <img src="assets/img/productos/2/1 logo pequeño blanco.avif" alt="Producto 2">
+            <span class="precio">$79</span>
+          </a>
+          <!-- Producto 3 -->
+          <a href="#" class="producto" title="Essentials Small Logo Single Jersey Tee">
+            <img src="assets/img/productos/3/1 Logo pequeño plomo.avif" alt="Producto 3">
+            <span class="precio">$79</span>
+          </a>
+          <!-- Producto 4 -->
+          <a href="#" class="producto" title="Polo Adicolor Oversized">
+            <img src="assets/img/productos/4/1 oversize plomo.avif" alt="Producto 4">
+            <span class="precio">$140</span>
+          </a>
+          <!-- Producto 5 -->
+          <a href="#" class="producto" title="ALL SZN OLIVE">
+            <img src="assets/img/productos/5/1 todo rosado.avif" alt="Producto 5">
+            <span class="precio">$100</span>
+          </a>
+          <!-- Producto 6 -->
+          <a href="#" class="producto" title="ALL SZN WARM CLAY">
+            <img src="assets/img/productos/6/1 todo verde.avif" alt="Producto 6">
+            <span class="precio">$100</span>
+          </a>
+          <!-- Producto 7 -->
+          <a href="#" class="producto" title="CODES CAMO ESTAMPADO">
+            <img src="assets/img/productos/7/1 estampado blanco.avif" alt="Producto 7">
+            <span class="precio">$100</span>
+          </a>
+          <!-- Producto 8 -->
+          <a href="#" class="producto" title="Essentials 3 Tiras Tejido Jersey">
+            <img src="assets/img/productos/8/1 tres tiras beige.avif" alt="Producto 8">
+            <span class="precio">$90</span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- =========================
+    <!-- ==================================================
          BOTÓN "VER TODO"
-    ========================= -->
+    ================================================== -->
     <div class="btn-ver-todo-container">
       <a href="#" class="btn-ver-todo">Ver Todo</a>
     </div>
 
-    <!-- =========================
-         CONTENEDOR 2: CARRUSEL (1x8)
-    ========================= -->
+    <!-- ==================================================
+         CONTENEDOR 2: CARRUSEL DESTACADOS (scroll horizontal)
+    ================================================== -->
     <section class="contenedor-dos">
-      <button class="btn-nav btn-left" id="btn-left">&#10094;</button>
       <div class="productos-destacados" id="carrusel">
-
         <!-- Producto Destacado 1 -->
         <div class="producto-destacado-wrapper">
-          <a href="#" class="producto-destacado" title="Producto destacado 1">
+          <a href="#" class="producto-destacado" title="Essentials Small Logo Single Jersey Tee">
             <img src="assets/img/productos/1/2 logo pequeño negro.avif" alt="Producto 1">
           </a>
           <span class="cantidad-elementos-cuadro">6 elementos</span>
@@ -110,7 +101,7 @@
 
         <!-- Producto Destacado 2 -->
         <div class="producto-destacado-wrapper">
-          <a href="#" class="producto-destacado" title="Producto destacado 2">
+          <a href="#" class="producto-destacado" title="Essentials Small Logo Single Jersey Tee">
             <img src="assets/img/productos/2/2 logo pequeño blanco.avif" alt="Producto 2">
           </a>
           <span class="cantidad-elementos-cuadro">6 elementos</span>
@@ -118,7 +109,7 @@
 
         <!-- Producto Destacado 3 -->
         <div class="producto-destacado-wrapper">
-          <a href="#" class="producto-destacado" title="Producto destacado 3">
+          <a href="#" class="producto-destacado" title="Essentials Small Logo Single Jersey Tee">
             <img src="assets/img/productos/3/2 Logo pequeño plomo.avif" alt="Producto 3">
           </a>
           <span class="cantidad-elementos-cuadro">6 elementos</span>
@@ -126,7 +117,7 @@
 
         <!-- Producto Destacado 4 -->
         <div class="producto-destacado-wrapper">
-          <a href="#" class="producto-destacado" title="Producto destacado 4">
+          <a href="#" class="producto-destacado" title="Polo Adicolor Oversized">
             <img src="assets/img/productos/4/2 oversize plomo.avif" alt="Producto 4">
           </a>
           <span class="cantidad-elementos-cuadro">6 elementos</span>
@@ -134,7 +125,7 @@
 
         <!-- Producto Destacado 5 -->
         <div class="producto-destacado-wrapper">
-          <a href="#" class="producto-destacado" title="Producto destacado 5">
+          <a href="#" class="producto-destacado" title="ALL SZN OLIVE">
             <img src="assets/img/productos/5/2 todo rosado.avif" alt="Producto 5">
           </a>
           <span class="cantidad-elementos-cuadro">6 elementos</span>
@@ -142,7 +133,7 @@
 
         <!-- Producto Destacado 6 -->
         <div class="producto-destacado-wrapper">
-          <a href="#" class="producto-destacado" title="Producto destacado 6">
+          <a href="#" class="producto-destacado" title="ALL SZN WARM CLAY">
             <img src="assets/img/productos/6/2 todo verde.avif" alt="Producto 6">
           </a>
           <span class="cantidad-elementos-cuadro">6 elementos</span>
@@ -150,7 +141,7 @@
 
         <!-- Producto Destacado 7 -->
         <div class="producto-destacado-wrapper">
-          <a href="#" class="producto-destacado" title="Producto destacado 7">
+          <a href="#" class="producto-destacado" title="CODES CAMO ESTAMPADO">
             <img src="assets/img/productos/7/2 estampado blanco.avif" alt="Producto 7">
           </a>
           <span class="cantidad-elementos-cuadro">6 elementos</span>
@@ -158,32 +149,30 @@
 
         <!-- Producto Destacado 8 -->
         <div class="producto-destacado-wrapper">
-          <a href="#" class="producto-destacado" title="Producto destacado 8">
+          <a href="#" class="producto-destacado" title="Essentials 3 Tiras Tejido Jersey">
             <img src="assets/img/productos/8/2 tres tiras beige.avif" alt="Producto 8">
           </a>
           <span class="cantidad-elementos-cuadro">7 elementos</span>
         </div>
-
       </div>
-      <button class="btn-nav btn-right" id="btn-right">&#10095;</button>
     </section>
 
-    <!-- =========================
-         CONTENEDOR 3: COMUNICACIÓN / ENLACES
-    ========================= -->
+    <!-- ==================================================
+         CONTENEDOR 3: COMUNICACIÓN
+    ================================================== -->
     <section class="contenedor-comunicacion">
       <div class="comunicacion-grid">
         <a href="https://wa.me/51901706889" target="_blank" class="btn-whatsapp">
           <span>Chatea con nosotros</span>
         </a>
-       </div>
+      </div>
     </section>
 
   </main>
 
-  <!-- =========================
+  <!-- ==================================================
        FOOTER
-  ========================= -->
+  ================================================== -->
   <footer>
     <p>© 2025 - Catálogo</p>
   </footer>
