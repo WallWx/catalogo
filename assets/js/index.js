@@ -1,4 +1,6 @@
-// Botones para mover el carrusel
+/* =========================
+   CARRUSEL - NAVEGACIÓN
+   ========================= */
 const carrusel = document.getElementById("carrusel");
 const btnLeft = document.getElementById("btn-left");
 const btnRight = document.getElementById("btn-right");
