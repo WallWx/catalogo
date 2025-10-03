@@ -71,6 +71,13 @@ header {
   font-size: 28px;
   color: #000;
   margin: 0;
+  text-decoration:line-through
+}
+
+.estado-producto {
+  font-size: 28px;
+  color: #b60d0d;
+  margin: 0;
 }
 
 /* Responsive texto */
@@ -228,9 +235,6 @@ header {
 .info-extra.activo .toggle-info .arrow {
   transform: rotate(180deg);
 }
-
-
-
 
 
 /* ==================================================
